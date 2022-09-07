@@ -1,0 +1,4 @@
+{
+    "uploadPath":"?/ipfs/uploads",
+    "downloadPath":"?/ipfs/downloads"
+}
