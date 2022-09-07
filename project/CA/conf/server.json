@@ -1,0 +1,21 @@
+{
+	"host": "localhost",
+	"http": 9090,
+	"coap": 5683,
+	"redis": {
+		"port": 6379,
+		"requirepass":"password",
+		"socket_keepalive":""
+	},
+	"bc": "localhost:3030",
+	"mqtt": {
+		"port": 1883,
+		"subscribe": "subscribe_name"
+	},
+	"db": {
+		"port": 3306,
+		"user": "user",
+		"password": "password"
+	}
+
+}
