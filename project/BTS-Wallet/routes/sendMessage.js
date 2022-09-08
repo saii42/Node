@@ -18,8 +18,8 @@ exports.send = async (phone) => {
 
   const date = Date.now().toString();
   const uri = "ncp:sms:kr:260738017946:bts_wallet";
-  const secretKey = "wFwpt3CNDmd7HGkMBTPxA7muGK8j57a5y6ZV60aI";
-  const accessKey = "Sxug0OE5BFcVb1czZX4s";
+  const secretKey = "시크릿키";
+  const accessKey = "액세스키";
   const method = "POST";
   const space = " ";
   const newLine = "\n";
