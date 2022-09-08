@@ -1,0 +1,70 @@
+http
+  .createServer(function (request, response) {
+    /* 
+        HTTP 헤더 전송
+        HTTP Status: 200 : OK
+        Content Type: text/plain
+    */
+    response.writeHead(200, { "Content-Type": "text/plain" });
+
+    response.end("Server running at http://127.0.0.1:8081\n");
+  })
+  .listen(8081);
+
+app.get("/api/user", (req, res) => {
+  res.json(users);
+});
+
+app.listen(3000, () => {
+  console.log("3000 port server is running");
+});
+
+
+
+// server.post("/api/user", (req, res) => {
+//   users.push(req.body);
+//   res.json(users);
+// });
+
+// server.get("/api/user/:idx", (req, res) => {
+//   connection.query("SELECT * from user", function (err, rows, fields) {
+
+//   if (!err) {
+//     user = rows.find((u) => {
+//       return u.id === req.params.id;
+//     });
+//   } else console.log("Error while performing Query.", err);
+// });
+// if (user) {
+//   res.json(user);
+//   console.log(user);
+//   console.log("select id success");
+// } else {
+//   res.status(404).json({ errorMessage: "User was not found" });
+//   });
+// });
+
+
+
+// connection.query("SELECT * from notice", function (err, rows, fields) {
+//   if (!err) console.log("The solution is: ", rows);
+//   else console.log("Error while performing Query.", err);
+// });
+
+// server.get("/api/user", (req, res) => {
+//   console.log(req.method);
+//   console.log(req.body);
+//   res.json(users);
+// });
+
+// server.get("/api/user/:id", (req, res) => {
+//   const user = users.find((u) => {
+//     return u.id === req.params.id;
+//   });
+//   if (user) {
+//     res.json(user);
+//     console.log("select id success");
+//   } else {
+//     res.status(404).json({ errorMessage: "User was not found" });
+//   }
+// });
