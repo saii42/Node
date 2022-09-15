@@ -17,4 +17,4 @@ app.get('/', (req, res) => {
 })
 
 
-app.listen(9091, () => console.log('ICNCAST IPFS Server on port 9091!'))
+app.listen(9091, () => console.log('IPFS Server on port 9091!'))
